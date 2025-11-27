@@ -51,7 +51,7 @@ export default function ProductCard({ product }) {
 
           <button
             onClick={() => router.push(`/products/${product._id}`)}
-            className="flex items-center gap-1 justify-start bg-blue-500 hover:bg-blue-700"
+            className="flex items-center gap-1 justify-start p-2 rounded-lg bg-blue-500 hover:bg-blue-700"
           >
             <FaEye className="text-[13px]" /> View
           </button>
