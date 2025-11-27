@@ -1,7 +1,10 @@
+export const dynamic = "force-dynamic";
+
 import FeaturesSection from "@/components/FeaturesSection";
 import HeroSection from "@/components/HeroSection";
 import ProductCard from "@/components/ProductCard";
 import TestimonialsSection from "@/components/TestimonialsSection";
+import WhyChooes from "@/components/WhyChooes";
 import React from "react";
 
 export default async function Page() {
@@ -16,7 +19,7 @@ export default async function Page() {
     );
     products = await res.json();
   } catch (error) {
-    console.error("❌ Fetch error:", error);
+    console.error(" Fetch error:", error);
   }
 
   // const handleDetails = (product) => {
@@ -51,6 +54,7 @@ export default async function Page() {
 
       <FeaturesSection></FeaturesSection>
       <TestimonialsSection></TestimonialsSection>
+      <WhyChooes></WhyChooes>
     </div>
   );
 }

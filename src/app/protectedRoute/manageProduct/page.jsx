@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import ProductTable from "@/components/ProductTable";
 import Image from "next/image";
 
